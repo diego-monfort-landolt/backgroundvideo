@@ -1,0 +1,120 @@
+* {
+    margin: 0;
+    padding: 0;
+
+    
+}
+
+#header {
+    min-height: 100vh;
+    position: relative;
+    color: #fff;
+    
+}
+button {
+    padding: 0.625rem;
+    border-radius: 0.938rem;
+    border: none;
+    background: #0c0c0ca8;
+    box-shadow: 0.625rem 0.625rem 0.625rem #000;
+    margin: 0.625rem ;
+    cursor: pointer;
+    
+}
+button:hover {
+    background: #0c0c0cef;
+
+}
+button a {
+    font-size:0.938rem;
+    letter-spacing: 1px;
+    color: #fff;
+
+    
+    text-decoration: none;
+    list-style: none;
+    
+}
+.promo {
+    padding-top: 15.875rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 60%;
+    margin: auto;
+    position: relative;
+
+   
+    
+    z-index: 2;
+}
+.content {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+    padding: 0.625rem 5.625rem;
+    border-radius: 10px;
+    border: none;
+    background-color: rgba(240, 248, 255, 0.281);
+
+    animation: myAnim 5s ease 0s 1 normal forwards;
+
+}
+.content h1 {
+    letter-spacing: 2px;
+    margin: 0.625rem;
+}
+video {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+.capa {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: #000;
+    opacity: 0.5;
+
+    mix-blend-mode: overlay;
+}
+
+@keyframes myAnim {
+	0%,
+	100% {
+		transform: rotate(0deg);
+		transform-origin: 50% 50%;
+	}
+
+	10% {
+		transform: rotate(8deg);
+	}
+
+	20%,
+	40%,
+	60% {
+		transform: rotate(-10deg);
+	}
+
+	30%,
+	50%,
+	70% {
+		transform: rotate(10deg);
+	}
+
+	80% {
+		transform: rotate(-8deg);
+	}
+
+	90% {
+		transform: rotate(8deg);
+	}
+}
